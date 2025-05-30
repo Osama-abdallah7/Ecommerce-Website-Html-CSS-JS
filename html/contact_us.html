@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topoco</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../CSS/contact_us.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- start header -->
+
+    <header>
+        <div class="container top-nav">
+            <a href="" class="logo"><img src="../img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for product.">
+                <button>Search</button>
+            </form>
+
+            <div class="cart-header">
+                <div onclick="open_cart()" class="icon-cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My Cart:</p>
+                    <p class="cart-price">$0</p>
+                </div>
+            </div>
+
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+                <ul id="menu">
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="all_products.html">all products</a></li>
+                    <li><a href="about_us.html">about us</a></li>
+                    <li class="active"><a href="contact_us.html">contact</a></li>
+                </ul>
+
+                <div class="loging_signup">
+                    <a href="login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup_page.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- end header -->
+
+    <!-- start cart -->
+
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>My cart <span class="count_item_cart">(0 Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart"></div>
+
+        <div class="bottom_Cart">
+            <div class="total">
+                <p>Cart subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+
+            <div class="button_Cart">
+                <a href="checkout.html" class="btn_cart">Proceed to checkout</a>
+                <button onclick="close_cart()" class="btn_cart trans_bg">Shop more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- end cart -->
+    
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Please fill out the form below and we’ll get back to you as soon as possible.</p>
+        
+        <form class="contact-form" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> support@ecommerce.com</p>
+            <p><strong>Phone:</strong> +1-800-123-4567</p>
+            <p><strong>Address:</strong> 123 Commerce St, New York, NY, USA</p>
+        </div>
+    </section>
+
+
+
+    <!-- start back to top -->
+
+    <div class="back_to_top">
+        <p>back to top</p>
+    </div>
+
+    <!-- end back to top -->
+
+
+    <!-- start footer -->
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="../img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24:</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit consectetur.</p>
+            </div>
+
+            <div class="row">
+                <h4>FAQs & Help</h4>
+
+                <div class="links">
+                    <a href="#">F.A.Q.’s</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Information</h4>
+
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topico.</span> all rights reserved</p>
+
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

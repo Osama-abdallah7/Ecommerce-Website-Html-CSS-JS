@@ -1,0 +1,48 @@
+:root{
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+}
+
+body{
+    margin-top: 200px;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: var(--dark-color);
+}
+
+p, li {
+    color: var(--parg-color);
+}
+
+ul {
+    margin: 10px 0 20px 20px;
+}
+
+.contact-cta {
+    margin-top: 30px;
+    background-color: #e9f7ef;
+    padding: 15px;
+    border-left: 5px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.contact-cta a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
